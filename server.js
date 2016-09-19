@@ -29,7 +29,17 @@ app.post('/upload', function(req, res){
   form.uploadDir = path.join(__dirname, '/client/img/uploads');
   
   form.on('file', function(filed, file){
-    fs.rename(file.path, path.join(form.uploadDir, 'backg.jpg'));
+    var filetype = file.name
+    var length = filetype.length
+    console.log(filetype +" "+ length);
+    filetype= filetype.slice(length-4,length);
+    
+    if( filetype == ".jpg"||filetype == ".png"||filetype == ".gif"){
+      fs.rename(file.path, path.join(form.uploadDir, 'backg'+filetype));
+    }else{
+      console.log("Invalid FileType "+filetype)
+    }
+        
   });
   form.on('error', function(err){
     console.log('An error has occured: \n' + err);
