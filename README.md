@@ -1,22 +1,15 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+|\   | \      /
+| \  |  \    /        
+|  \ |   \  /        
+|   \|    \/         
 
 
-Welcome to your Node.js project on Cloud9 IDE!
+This application allows you to Create a landing page by simply adding a Jpg image of your landing page design
 
-This chat example showcases how to use `socket.io` with a static `express` server.
 
-## Running the server
+Start by going to <domain name ex. www.google.com>/upload and use the form to load your image on the site
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+Then simply revist your home page and presto your image should appear.
 
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+*application currently only supports Jpgs. Other image type support coming soon.
